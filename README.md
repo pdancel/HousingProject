@@ -8,23 +8,23 @@
 * Jungmyun Kim
 
 ## Project Proposal ##
-This project visualizes the housing affordability by looking at the patterns between median housing prices, median income by male and female, and other factors.
+This project visualizes housing affordability in the United States by looking at the patterns between median housing prices, median income by male and female, and other factors.
 
 ## Data Used ##
-We will be using data from multiple sources. Please see <https://github.com/pdancel/HousingProject> for more information.
+Please see <https://github.com/pdancel/HousingProject> for more information on the data used for this project.
 
 
-## Inspiring ##
+## Visualizations of Inspiration ##
 
 
 ![1](images/1.jpg)
-
+- - - -
 
 ![2](images/2.jpg)
-
+- - - -
 
 ![3](images/3.jpg)
-
+- - - -
 
 
 

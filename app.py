@@ -95,7 +95,7 @@ app = Flask(__name__, static_url_path='/static')
 
 
 #Create routes
-@app.route("/home.html")
+@app.route("/")
 def home():
     """Return the homepage."""
     return render_template('home.html')

@@ -95,63 +95,35 @@ app = Flask(__name__, static_url_path='/static')
 
 
 #Create routes
-@app.route("/")
-def index():
+@app.route("/home.html")
+def home():
     """Return the homepage."""
-    return render_template('index.html')
+    return render_template('home.html')
+
+@app.route("/index_1.html")
+def index_1():
+    """Return the homepage."""
+    return render_template('index_1.html')    
+
+@app.route("/index_2.html")
+def index_2():
+    """Return the homepage."""
+    return render_template('index_2.html')    
+
+@app.route("/index_3.html")
+def index_3():
+    """Return the homepage."""
+    return render_template('index_3.html')   
+
+@app.route("/map_view.html")
+def map_view():
+    """Return the homepage."""
+    return render_template('map_view.html')                 
 
 @app.route('/finaldata')
 def finaldata():
     return jsonify(df)
 
-# # List of states
-# @app.route('/states')
-# def states():
-#     states_list = df[['state']]
-#     states_list_ravel = list(np.ravel(states_list))
-#     return jsonify(states_list_ravel)
-
-# #List of male salaries
-# @app.route('/male')
-# def male():
-#     male_list = df[['male_salary']]
-#     male_list_ravel = list(np.ravel(male_list))
-#     return jsonify(male_list_ravel)
-
-# #List of female salaries
-# @app.route('/female')
-# def female():
-#     female_list = df[['female_salary']]
-#     female_list_ravel = list(np.ravel(female_list))
-#     return jsonify(female_list_ravel)
-
-# #List of combined salaries
-# @app.route('/combined')
-# def combined():
-#     combined_list = df[['combined_salary']]
-#     combined_list_ravel = list(np.ravel(combined_list))
-#     return jsonify(combined_list_ravel)
-
-# #List of Median home prices
-# @app.route('/medianhomeprice')
-# def medianhomeprice():
-#     medianhomeprice_list = df[['median_home_price']]
-#     medianhomeprice_list_ravel = list(np.ravel(medianhomeprice_list))
-#     return jsonify(medianhomeprice_list_ravel)
-
-# #List of latitudes
-# @app.route('/latitude')
-# def latitude():
-#     latitude_list = df[['latitude']]
-#     latitude_list_ravel = list(np.ravel(latitude_list))
-#     return jsonify(latitude_list_ravel)
-
-# #List of longtitudes
-# @app.route('/longtitude')
-# def longtitude():
-#     longtitude_list = df[['longtitude']]
-#     longtitude_list_ravel = list(np.ravel(longtitude_list))
-#     return jsonify(longtitude_list_ravel)    
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -100,22 +100,22 @@ def home():
     """Return the homepage."""
     return render_template('home.html')
 
-@app.route("/index_1.html")
+@app.route("/index_1")
 def index_1():
     """Return the homepage."""
     return render_template('index_1.html')    
 
-@app.route("/index_2.html")
+@app.route("/index_2")
 def index_2():
     """Return the homepage."""
     return render_template('index_2.html')    
 
-@app.route("/index_3.html")
+@app.route("/index_3")
 def index_3():
     """Return the homepage."""
     return render_template('index_3.html')   
 
-@app.route("/map_view.html")
+@app.route("/map_view")
 def map_view():
     """Return the homepage."""
     return render_template('map_view.html')                 

@@ -3,7 +3,7 @@
 		<meta charset="utf-8">
 		<title>Housing Affordability</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="static/map_view.css">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='map_view.css') }}">
 	</head>
 
 
@@ -29,7 +29,7 @@
 
         
     	
-        <iframe src="templates/d3_2.html" height="500" width="1000"></iframe>
+        <iframe src="d3_2.html" height="500" width="1000"></iframe>
         <h3>Data Analysis Results</h3>
         <li>This is what very high positive correlation looks like.  There is obviously a relationship between these two variables.</li>
         <li>Somewhat dubious relationship in the sense that we are correlating a variable on a function of itself.  We are looking at median home price compared

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Affordability Index</title>
-		<link rel="stylesheet" type="text/css" href="static/style.css">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 		<script src="https://d3js.org/d3.v4.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
 	</head>
@@ -11,6 +11,6 @@
 		<div id="svg-area"></div>
 		<div class="chart">
 		</div>
-		<script type="text/javascript" src="static/app_1.js"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='app_1.js') }}"></script>
   </body>
 </html>

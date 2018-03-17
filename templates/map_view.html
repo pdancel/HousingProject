@@ -19,7 +19,7 @@
 
 
        <!-- Our CSS -->
-    <link rel="stylesheet" type="text/css" href="static/map_view.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='map_view.css') }}">
 
   </head>
   <body>
@@ -44,7 +44,7 @@
       <h3> Team members: Tommy Steed, Patrick Dancel, Christine Assaad, Jungmyun Kim </h3>
     </div>
 
-    <script type="text/javascript" src="static/logic_test.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='logic_test.js') }}"></script>
 
   </body>
 </html>

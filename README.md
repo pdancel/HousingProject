@@ -1,6 +1,8 @@
 # Project 2: Housing Affordability Project #
 - - - -
 
+To view the application, please click [here](https://pdancel.shinyapps.io/USHousingAffordability/)
+
 ## Team Members ##
 * Tommy Steed
 * Patrick Dancel
